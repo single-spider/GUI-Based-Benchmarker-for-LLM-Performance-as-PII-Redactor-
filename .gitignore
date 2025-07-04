@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-selfcheck.json
+
+# Streamlit
+.streamlit/
+
+# IDE configuration
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Data files - you might want to commit some gold standards,
+# but generally avoid committing large datasets or downloaded metrics.
+/data/*.json
+/metrics_*.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
