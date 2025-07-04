@@ -2,6 +2,8 @@
 ## GUI-Based-Benchmarker-for-LLM-Performance-as-PII-Redactor
 [![Made with Streamlit](https://img.shields.io/badge/Made%20with-Streamlit-FF4B4B.svg)](https://streamlit.io)
 
+**Live Demo:** [https://llm-pii-eval.streamlit.app/](https://llm-pii-eval.streamlit.app/)
+
 An interactive web application built with Streamlit to for End-To-End evaluation, comparison, and testing of Large Language Models (LLMs) on Personally Identifiable Information (PII) detection and redaction tasks on any language. 
 
 This tool provides a complete, multi-level pipeline to measure model performance and even generate its own synthetic test data on the fly.
