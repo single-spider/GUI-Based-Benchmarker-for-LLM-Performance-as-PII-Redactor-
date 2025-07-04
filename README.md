@@ -61,8 +61,8 @@ Follow these instructions to set up and run the project locally.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/pii-evaluation-pipeline.git
-    cd pii-evaluation-pipeline
+    git clone https://github.com/single-spider/GUI-Based-Benchmarker-for-LLM-Performance-as-PII-Redactor.git
+    cd GUI-Based-Benchmarker-for-LLM-Performance-as-PII-Redactor-
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
