@@ -1,4 +1,4 @@
-# GUI-Based-Benchmarker-for-LLM-Performance-as-PII-Redactor-
+# LLM-Powered PII Evaluation & Redaction Pipeline
 
 [![Made with Streamlit](https://img.shields.io/badge/Made%20with-Streamlit-FF4B4B.svg)](https://streamlit.io)
 
@@ -6,7 +6,13 @@ An interactive web application built with Streamlit to evaluate, compare, and te
 
 This tool provides a complete, multi-level pipeline to measure model performance and even generate its own synthetic test data on the fly.
 
-  <!-- **IMPORTANT**: Replace this with a real screenshot of your app! -->
+---
+
+## Overview
+
+Here's a glimpse of the application's main interface:
+
+![Main Application Page](Main_Page.png)
 
 ---
 
@@ -25,11 +31,15 @@ This tool provides a complete, multi-level pipeline to measure model performance
     -   Don't have a dataset? **Generate one!**
     -   Uses a selected LLM to create high-quality, structured PII data in any specified language.
     -   Supports batch generation for efficiency and allows the inclusion of **custom, user-defined PII types**.
+    -   Screenshot of the data generation interface:
+        ![Dataset Generation Interface](DataSet_Generation.png)
 
 -   **Detailed Metrics & Analysis:**
     -   Calculates and displays both per-file and cumulative metrics for each model.
     -   Provides raw JSON outputs for granular inspection.
     -   Allows for easy export of all calculated metrics in JSON format.
+    -   Screenshot of the metrics display:
+        ![Metrics Display](Metrics.png)
 
 -   **Interactive & User-Friendly UI:**
     -   Manage API keys, select models, and upload or generate data through a clean web interface.
@@ -54,7 +64,7 @@ Follow these instructions to set up and run the project locally.
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
-    
+
     *On macOS / Linux:*
     ```bash
     python3 -m venv venv
@@ -86,6 +96,7 @@ Follow these instructions to set up and run the project locally.
 3.  **Manage Data:**
     -   **Generate Data:** Go to the "Generate Synthetic Data" tab, choose a generator model, specify a language, select the PII types you want, and click "Generate". You can even define new, custom PII types.
     -   **Upload Data:** Alternatively, go to the "Upload Gold Data" tab to upload your own JSON evaluation files. The required format is a dictionary where each key is a sample ID and the value is an object containing `text`, `tokens`, and `labels`.
+    -   **Manage Cache:** The "Manage Data Cache" tab allows you to see all loaded/generated data and download the synthetic datasets you created.
 
 4.  **Run the Pipeline:**
     -   Click **"▶️ Run Level 1"** to start the PII detection evaluation.
